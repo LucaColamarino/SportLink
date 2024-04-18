@@ -1,0 +1,51 @@
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+       -webkit-appearance: none;
+        margin: 0;
+}
+body {
+    height: 100%;
+    background-image: url("../Media/sfondo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .bg_lrose
+  {
+    background-color: #d8b995 !important;
+  }
+
+  .lblue_btn
+  {
+    background-color: #98c8df ;
+    color: white;
+  }
+
+  .lblue_btn:hover 
+  {
+    background-color: #528da8;
+    color: black ;
+  }
+.top{
+  margin-bottom: -1px;
+
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+
+}
+.mid{
+  margin-top: -1px;
+  margin-bottom: -1px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.bottom{
+  margin-top: -1px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+
+}

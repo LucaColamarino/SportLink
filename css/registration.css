@@ -1,0 +1,69 @@
+html,
+body {
+  height: 100%;
+  background-image: url("../Media/sfondo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+body {
+  display: flex;
+  align-items: center;
+}
+
+.form-signup {
+  max-width: 330px;
+  padding: 15px;
+}
+
+
+.form-signup input[name="inputName"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signup input[name="inputSurname"] {
+  margin-bottom: -1px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signup input[type="email"] {
+  margin-bottom: -1px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signup input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+
+.form-signup input[name="inputPassword"] {
+  margin-bottom: -1px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.bg_lrose
+{
+  background-color: #d8b995;
+}
+
+.lblue_btn
+{
+  background-color: #98c8df ;
+  color: white;
+}
+
+.lblue_btn:hover {
+  background-color: #528da8;
+  color: black ;
+}

@@ -1,0 +1,290 @@
+.box-container
+{
+    display: grid;
+    grid-template: ' header-left header header-right' 10%
+                    'header-left core core' 15%
+                    'side-menu core core'  70%
+                    ' . . . ' 5% /15% 75% 10%;
+
+}
+.icon_menu{
+  grid-area: icon_menu;
+}
+body {background-image: url("../Media/sfondo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;}
+.header
+{
+    grid-area: header;
+}
+.header-left
+{
+    grid-area: header-left;
+}
+.header-right
+{
+    grid-area: header-right;
+}
+.footer
+{
+    grid-area: footer;
+}
+.side-menu 
+{
+    grid-area: side-menu;
+    /*border: solid 1px;*/
+}
+
+.core
+{
+    grid-area: core;
+}
+
+
+ .bg-light-green {
+    background-color: rgb(94, 172, 135);/* !important; */
+  }
+  .bg-green {
+    background-color: rgb(31, 94, 73);/* !important; */
+  }
+
+
+
+  .lblue_btn
+  {
+    background-color: #98c8df ;
+    color: white;
+  }
+
+  .lblue_btn:hover {
+    background-color: #528da8;
+    color: black ;
+  }
+
+  .selected {
+    background-color: #70a8c2  !important;  /* #ada091*/
+  }
+
+  .lrose_btn
+  {
+    background-color: #d8b995;
+    color: white;
+  }
+
+  .lrose_btn:hover {
+    background-color: #998c7c;
+    color: black ;
+  }
+
+  .bg_lblue
+  {
+    background-color: #98c8df ;
+  }
+  .no-border {
+    border: 0 !important;
+  }
+  .bg_lrose
+  {
+    background-color: #d8b995 !important;
+  }
+  .text_lrose
+  {
+    color:  #d8b995 !important;
+  }
+  .text_lgrey
+  {
+    color:  #7d8081  !important;
+  }
+
+  .round{border-radius: 0.7rem;}
+
+        .dropbtn {
+            background-color:  rgb(94, 172, 135);
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+  
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+  
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgb(94, 172, 135);
+            box-shadow: 0px 8px 16px 
+                0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        .dropdown-content button {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+  
+        .dropdown-content button:hover {
+            background-color: #f1f1f1
+        }
+  
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+  
+        .dropdown:hover .dropbtn {
+            background-color: rgb(40, 119, 82);
+        }
+.top{
+  margin-bottom: -1px;
+
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+
+}
+.icon{
+  height: 60px;
+  width: 60px;
+}
+.mid{
+  margin-top: -1px;
+  margin-bottom: -1px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.bottom{
+  margin-top: -1px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+
+}
+
+.headerR {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.headerR ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: auto;
+
+}
+
+
+.headerR .logo{
+  float: left;
+  font-size: 25px;
+  padding: 10px 20px;
+}
+
+.headerR .menu{
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+.headerR .menu-icon{
+  padding: 28px 20px;
+  position: relative;
+  float: right;
+  cursor: pointer;
+}
+
+.headerR .menu-icon .nav-icon{
+  background-color: grey;
+  display: block;
+  width: 18px;
+  height: 2px;
+  position: relative;
+  transition: background-color .2s ease-out;
+}
+
+.headerR .menu-icon .nav-icon::before{
+  top: 5px;
+}
+
+.headerR .menu-icon .nav-icon::after{
+  top: -5px;
+}
+
+.headerR .menu-btn{
+  display:none;
+}
+
+.headerR .menu-btn:checked ~ .menu{
+  max-height: 640px;
+}
+.headerR ul{
+  background-color: rgba(227, 210, 191, 0.98);
+}
+
+
+@media (max-width: 58em) {
+  .box-container
+  {
+      display: grid;
+      grid-template: ' header header icon_menu' 15vh
+                      'core core core' 15vh
+                      'core core core'  70vh /15vw 65vw 20vw;
+  
+  }
+  .user_button{display: none;}
+  .avatar_ico{
+    max-width: 90%;
+    max-height: 90%;
+    padding: auto;
+
+  }
+  .site_ico{
+    max-width: 300px;
+  }
+  .chat_date{
+    display: none;
+  }
+  .chat_match{
+    display: none;
+  }
+
+  .icon{
+    max-width: 30px;
+    max-height: 30px;
+  }
+  .header-left{
+    display: none;
+  }
+}
+@media (min-width: 58em) {
+ .headerR{
+  display: none;
+ }
+ .headerR li{
+  float: left;
+}
+.headerR li a{
+  padding: 20px 30px;
+}
+.headerR .menu{
+  clear:none;
+  float: right;
+
+}
+}
+
+
+
+
+
+
+
