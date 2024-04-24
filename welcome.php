@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyAnlcUwH5VOrr_REzNalW64iOxQyyaK0M0&callback=Function.prototype"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDdb-CQ72HKsHaRK2kWdZWByWNvO_cAmcw&callback=Function.prototype"></script>
     <script src="./Functions/swal_handler.js"></script>
     <script src="./bootstrap/js/bootstrap.bundle.js"></script>
     <script src="./Functions/welcome.js"></script>
